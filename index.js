@@ -15,7 +15,7 @@ var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
+  masterKey: process.env.MASTER_KEY || 'masterKey', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of cl  asses to support for query subscriptions
@@ -43,6 +43,10 @@ app.get('/', function(req, res) {
 // Remove this before launching your app
 app.get('/test', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/test.html'));
+});
+
+app.get('/home', function(req, res) {
+  res.sendFile(path.join(__dirname, '/public/home.html'));
 });
 
 var port = process.env.PORT || 1337;
