@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "serverURL": "http://localhost:1337/parse",
+      "appId": "myAppId",
+      "masterKey": "masterKey",
+      "appName": "conjur.co"
+    }
+  ],
+  "users": [
+    {
+      "user":"user1",
+      "pass":"pass"
+    },
+    {
+      "user":"user2",
+      "pass":"pass"
+    }
+  ]
+}
