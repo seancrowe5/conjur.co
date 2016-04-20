@@ -1,6 +1,6 @@
 
 Parse.initialize('myAppId','masterKey');
-Parse.serverURL = 'http://conjur-web.herokuapp.com/parse';
+Parse.serverURL = 'http://localhost:1337/parse';
 
 var obj = new Parse.Object('GameScore');
 obj.set('score',1339);
