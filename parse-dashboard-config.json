@@ -16,5 +16,6 @@
       "user":"user2",
       "pass":"pass"
     }
-  ]
+  ],
+    "production":true
 }
