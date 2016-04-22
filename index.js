@@ -50,6 +50,10 @@ app.get('/home', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/home.html'));
 });
 
+app.get('/ivy', function(req, res) {
+  res.sendFile(path.join(__dirname, '/public/index.html'));
+});
+
 var port = process.env.PORT || 1337;
 var httpServer = require('http').createServer(app);
 httpServer.listen(port, function() {
