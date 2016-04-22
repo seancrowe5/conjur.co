@@ -52,6 +52,12 @@ app.get('/home', function(req, res) {
 
 app.get('/ivy', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/index.html'));
+    
+});
+
+app.get('/widgets', function(req, res) {
+  res.sendFile(path.join(__dirname, '/public/widgets.html'));
+    
 });
 
 var port = process.env.PORT || 1337;
