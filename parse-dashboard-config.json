@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "serverURL": "http://localhost:1337/parse",
+      "serverURL": "http://conjur-web.herokuapp.com/parse",
       "appId": "myAppId",
       "masterKey": "masterKey",
       "appName": "conjur.co"
@@ -16,5 +16,6 @@
       "user":"user2",
       "pass":"pass"
     }
-  ]
+  ],
+    "production":true
 }
